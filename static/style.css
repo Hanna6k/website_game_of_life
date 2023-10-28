@@ -4,68 +4,72 @@ body{
 }
 
 button{
-    background-color: blueviolet;
-    border: solid black;
+    background-color: rgb(237, 175, 184);
+    border: solid rgb(51, 51, 51);
 }
 
 .container{
     background-color: white;
     width: 100vw;
     height: 100vh;
-
     display: grid;
-
     grid-template-columns: 1fr 3fr 1fr;
-    grid-template-rows: 1fr 8fr 1fr;    
+    grid-template-rows: 1fr 6fr 1fr;  
+    gap: 3mm;  
 }
 
 .header{
     grid-column: 1 / 4;
     grid-row: 1 / 2 ;
-    background-color: rgb(152, 255, 240);
+    background-color: rgb(149, 184, 209);
     font-size: 10mm;
-    padding-left: 10 ;
-
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
 }
 
 .footer{
     grid-column: 1 / 4;
     grid-row: 3 / 4;
-    background-color: rgb(152, 255, 240);
+    background-color: rgb(149, 184, 209);
     padding: 3mm;
 }
 
 .contentleft{
     grid-column: 1 / 2;
     grid-row: 2 / 3 ;
-    background-color: rgb(216, 154, 255);
+    background-color: rgb(149, 184, 209);
     padding: 3mm;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contentleft button {
+    margin: 5px 0; /* Add margin between each button (5px top and bottom, 0 left and right) */
+    width: 150px; /* Set the width to 150 pixels */
+    height: 40px;
 }
 
 .contentmiddle{
     grid-column: 2 / 3;
     grid-row: 2 / 3;
-    background-color: rgb(146, 148, 255);
+    background-color: rgb(149, 184, 209);
     padding: 3mm;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center;
+    
 }
 
 .contentright{
     grid-column: 3 / 4;
     grid-row-start: 2 / 3;
-    background-color: rgb(132, 206, 255);
+    background-color: rgb(149, 184, 209);
     padding: 3mm;
 }
 
-#game_field {
-    width: 200px;  
-    height: 400px; 
-    background-color: grey;  
-    /*position: absolute;   Position it absolutely within its containing element */
-    /*top: 50%;  /* Position the top edge of the square at 50% of its containing element's height (vertical center) */
-    /*left: 50%;  /* Position the left edge of the square at 50% of its containing element's width (horizontal center) */
-    /*transform: translate(-50%, -50%);  /* Center the square exactly in the middle of the page */
-}
-
 #myCanvas {
-    background-color: gray; /* Set the canvas background color to gray*/
+    background-color: rgb(102, 106, 134); /* Set the canvas background color to gray*/
 }

@@ -13,27 +13,22 @@
     <div class= "container">
         <div class= "header"> Game of Life
         </div>
-
-        <div class= "footer">footer</div>
+        <div class= "footer"></div>
         <div class="contentleft"> 
-            <input type="text" id="inputPlainText" onchange="handleTextInput(event)">
-            <p>Encrypted word: <span id='spanEncrypted' >No word enterd yet</span></p>
-            <button id="btnRandom" onclick="handleStartCells(event)">random</button>
-            <button id="btnPattern" onclick="patternCells(event)">pattern</button>
+            <button id="btnRandom" onclick="randomCells(event)">random</button>  
+            <button id="btnPattern" onclick="patternCells(event)">pattern</button> 
             <button id="btnStartStop" onclick="startStop(event)">start/stop</button>
             </div>
 
         <div class="contentmiddle"> 
             <script src="scripts.js"></script>
-            <canvas id="myCanvas" width="800" height="450"></canvas>
-            
+            <canvas id="myCanvas" width="{{ canvas_width }}" height="{{ canvas_height }}"></canvas>           
             </div>
 
         <div class="contentright">  
-            <div>hello</div>
+            <div></div>
             </div>
 
-        <!--<p>Mouse pos: <b><span id="mouse-pos"></span></b></p>-->
     </div>
 </body>
 </html>
